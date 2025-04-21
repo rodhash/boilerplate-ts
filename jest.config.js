@@ -6,3 +6,19 @@ module.exports = {
     "^.+\.tsx?$": ["ts-jest",{}],
   },
 };
+
+
+// /** @type {import('ts-jest').JestConfigWithTsJest} **/
+// module.exports = {
+//   // preset: 'ts-jest',
+//   testEnvironment: "node",
+//   transform: {
+//     "^.+\\.ts$": "ts-jest", // Use ts-jest to handle TypeScript
+//   },
+//   extensionsToTreatAsEsm: [".ts"], // Treat .ts files as ES modules
+//   globals: {
+//     "ts-jest": {
+//       useESM: true, // Enable ES module support
+//     },
+//   },
+// };
