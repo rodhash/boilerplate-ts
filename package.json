@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "./dist/index.js",
   "scripts": {
-    "start:dev": "npx tsx watch ./src/index.ts",
-    "start": "node ./dist/index.js",
+    "start:dev": "bun run --watch ./src/index.ts",
+    "start": "bun ./dist/index.js",
     "build": "tsc --build tsconfig.build.json && tsup src --minify",
     "prettier": "prettier --write ./src/**/*.ts",
-    "eslint": "npx eslint ./src --fix",
+    "eslint": "bun eslint ./src --fix",
     "test": "jest --no-cache --watch-all --coverage",
     "test:ci": "jest --no-cache --coverage"
   },
